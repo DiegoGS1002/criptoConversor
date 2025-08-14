@@ -10,7 +10,7 @@ def get_exchange_rate(origem ="bitcoin", destino="usd"):
         if origem in data and destino in data[origem]:
             return data[origem][destino]
         else:
-            print("Moeda não encontrada. Certifique-se de usar os nomes corretos.")
+            print("Moeda não encontrada, certifique-se de usar os nomes corretos.")
             return None
     else:
         print("Erro ao acessar a API.")
